@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- End of Google Fonts -->
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Stock Trading Journal</title>
+</head>
+<body class="text-center">
+
+  <!-- Header/Navbar -->
+  <header>
+    <navbar class="navbar">
+      <a href="index.html" class="navbar-link">Home</a>
+      <a href="trades.html" class="navbar-link">Trades</a>
+      <a href="spreadsheet.html" class="navbar-link">Spreadsheet</a>
+      <a href="screenshots.html" class="navbar-link">Screenshots</a>
+      <a href="signup.html" class="navbar-link">Signup</a>
+      <a href="login.html" class="navbar-link">Login</a>
+      <a href="contact.html" class="navbar-link">Contact</a>
+    </navbar>
+  </header>
+  <!-- End of Header/Navbar -->
+  
+  <!-- Trades Page Heading -->
+  <div class="wrapper">
+    <section class="common-pages center">
+      <h1 class="heading section-heading">Stock Trading Journal</h1>
+      <img src="/images/5-minute-charts.jpg" alt="5 minute charts" class="chart-image">
+      <h2 class="common-subheading">Enter Trade Details</h2>
+    </section>
+  </div>
+  <!-- End of Trades Page Heading -->
+
+  <main class="container text-center center">
+    <form class="trades-form" action="#" method="">
+
+      <fieldset>
+        <legend>Entry Date</legend>
+        <div class="form-floating mb-3 align-self-center">  
+          <input type="date" class="data" name="entry-date" id="entry-date" placeholder="Entry Date">
+          <label for="entry-date" class="form-label"></label>
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Stock Symbol</legend>
+        <div>
+          <label for="stock-symbol" class="form-label"></label>
+          <select class="data" id="stock-symbol" name="stock-symbol">
+            <option value="aapl">AAPL</option>
+            <option value="baba">BABA</option>
+            <option value="c">C</option>
+            <option value="ge">GE</option>
+            <option value="sds">SDS</option>
+            <option value="sq">SQ</option>
+            <option value="sqqq">SQQQ</option>
+            <option value="x">X</option>
+            <option value="xom">XOM</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Timeframe</legend>
+        <div>
+          <label for="timeframe" class="form-label"></label>
+          <select class="data" id="timeframe" name="timeframe">
+            <option value="1-minute">1 Minute</option>
+            <option value="2-minute">2 Minute</option>
+            <option value="3-minute">3 Minute</option>
+            <option value="5-minute">5 Minute</option>
+            <option value="15-minute">15 Minute</option>
+            <option value="30-minute">30 Minute</option>
+            <option value="60-minute">60 Minute</option>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Entry signal</legend>
+        <select class="data" name="entry-signal" id="entry-signal">
+          <option value="breakout">Breakout</option>
+          <option value="pullback">Pullback</option>
+          <option value="elephant-bar">Elephant Bar</option>
+          <option value="inside-bar">Inside Bar</option>
+          <option value="8ma-catch">8ma Catch</option>
+          <option value="20ma-catch">20ma Catch</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Direction</legend>
+        <select class="data" name="direction" id="direction">
+          <option value="long">Long</option>
+          <option value="short">Short</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Number of Shares</legend>
+        <div class="form-floating mb-3 align-self-center">
+          <input type="number" class="data" name="number-of-shares" id="number-of-shares" placeholder="Number of Shares">
+          <label for="number-of-shares" class="form-label"></label>
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Entry Price</legend>
+        <div class="form-floating mb-3 align-self-center">
+          <input type="number" min="1" step="any" class="data" name="entry-price" id="entry-price" placeholder="Entry Price">
+          <label for="entry-price" class="form-label"></label>
+        </div>
+      </fieldset>
+         
+      <fieldset>
+        <legend>Original Stop</legend>
+        <div class="form-floating mb-3 align-self-center">
+          <input type="number" min="1" step="any" class="data" name="original-stop" id="original-stop" placeholder="Original Stop">
+          <label for="original-stop" class="form-label"></label>
+        </div>
+      </fieldset>
+          
+      <fieldset>
+        <legend>Initial Target</legend>
+        <div class="form-floating mb-3 align-self-center">
+          <input type="number" min="1" step="any" class="data" name="initial-target" id="initial-target" placeholder="Initial Target">
+          <label for="initial-target" class="form-label"></label>
+        </div>
+      </fieldset>
+           
+      <fieldset>
+        <legend>Risk Amount</legend>
+        <div class="form-floating mb-3 align-self-center">
+          <input type="number" min="1" step="any" class="data" name="risk-amount" id="risk-amount" placeholder="Risk Amount">
+          <label for="risk-amount" class="form-label"></label>
+        </div>
+      </fieldset>
+            
+      <fieldset>
+        <legend>Exit Date</legend>
+        <div class="form-floating mb-3 align-self-center">
+          <input type="date" class="data" name="exit-date" id="exit-date" placeholder="Exit Date">
+          <label for="exit-date" class="form-label"></label>
+        </div>
+      </fieldset>
+       
+      <fieldset>
+        <legend>Exit signal</legend>
+        <select class="data" name="exit-signal" id="exit-signal">
+          <option value="full-stop">Full Stop</option>
+          <option value="partial-stop">Partial Stop</option>
+          <option value="breakeven-stop">Breakeven Stop</option>
+          <option value="bar-x-bar-stop">Bar x Bar Stop</option>
+          <option value="8ma-stop">8ma Stop</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Exit Price</legend>
+        <div class="form-floating mb-3 align-self-center">
+          <input type="number" name="exit-price" id="exit-price" min="1" step="any" class="data" placeholder="Exit Price">
+          <label for="exit-price" class="form-label"></label>
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Profit or Loss Total</legend>
+        <div class="form-floating mb-3 align-self-center">
+          <input type="number" name="profit-loss-total" id="profit-loss-total" min="" step="any" class="data"  placeholder="Profit or Loss Total">
+          <label for="profit-loss-total" class="form-label"></label>
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Profit or Loss</legend>
+        <select class="data" name="profit-loss" id="profit-loss">
+          <option value="profit">Profit</option>
+          <option value="loss">Loss</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Comments</legend>
+        <div class="form-floating mb-3 align-self-center">
+          <input type="text" class="data" name="comments" id="comments" placeholder="Comments">
+          <label for="comments" class="form-label"></label>
+        </div>
+      </fieldset>
+      
+      <button class="submit-trade-button" type="submit">Submit Trade</button>
+
+    </form>
+  </main>
+  
+
+  <!-- Footer -->
+  <footer class="center">
+    <p>Copyright Trade Journal - 2024</p>
+  </footer>
+  <!-- End Footer -->
+
+
+  <!-- Bootstrap -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- End of Google Fonts -->
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Stock Trading Journal</title>
+</head>
+<body class="text-center">
+
+  <!-- Header/Navbar -->
+  <header>
+    <navbar class="navbar">
+      <a href="index.html" class="navbar-link">Home</a>
+      <a href="trades.html" class="navbar-link">Trades</a>
+      <a href="spreadsheet.html" class="navbar-link">Spreadsheet</a>
+      <a href="screenshots.html" class="navbar-link">Screenshots</a>
+      <a href="signup.html" class="navbar-link">Signup</a>
+      <a href="login.html" class="navbar-link">Login</a>
+      <a href="contact.html" class="navbar-link">Contact</a>
+    </navbar>
+  </header>
+  <!-- End of Header/Navbar -->
+  
+  <!-- Spreadsheet Page Heading -->
+  <div class="wrapper">
+    <section class="common-pages center">
+      <h1 class="heading section-heading">Stock Trading Journal</h1>
+      <img src="/images/trading-platform.jpg" alt="5 minute charts" class="chart-image">
+      <h2 class="common-subheading">Spreadsheet</h2>
+    </section>
+  </div>
+  <!-- End of Spreadsheet Page Heading -->
+
+  <!-- Spreadsheet -->
+  <main class="container trade_journal center">
+    <table class="table table-striped table-bordered table-hover table-responsive">
+      <tr class="table_row">
+        <th class="table_heading" scope="col">#</th>
+        <th class="table_heading" scope="col">Entry Date</th> 
+        <th class="table_heading" scope="col">Stock Symbol</th> 
+        <th class="table_heading" scope="col">Timeframe</th> 
+        <th class="table_heading" scope="col">Entry Signal</th> 
+        <th class="table_heading" scope="col">Direction</th> 
+        <th class="table_heading" scope="col">Number of Shares</th> 
+        <th class="table_heading" scope="col" class="money">Entry Price</th> 
+        <th class="table_heading" scope="col" class="money">Original Stop</th> 
+        <th class="table_heading" scope="col" class="money">Initial Target</th> 
+        <th class="table_heading" scope="col" class="money">Risk Amount</th> 
+        <th class="table_heading" scope="col">Exit Date</th> 
+        <th class="table_heading" scope="col">Exit Signal</th> 
+        <th class="table_heading" scope="col" class="money">Exit Price</th> 
+        <th class="table_heading" scope="col">Profit/Loss</th> 
+        <th class="table_heading" scope="col" class="comments">Comments</th> 
+      </tr>
+
+      <tr class="table_row">
+        <th class="table_data" scope="row">5</th>
+        <td class="table_data" scope="row">12/20/2023</td>
+        <td class="table_data" scope="row">QID</td>
+        <td class="table_data" scope="row">Daily</td>
+        <td class="table_data" scope="row">Bull Elephant</td>
+        <td class="table_data" scope="row">Long</td>
+        <td class="table_data" scope="row">100</td>
+        <td class="table_data" scope="row">$10.86</td>
+        <td class="table_data" scope="row">$10.40</td>
+        <td class="table_data" scope="row">$12.36</td>
+        <td class="table_data" scope="row">$50.00</td>
+        <td class="table_data" scope="row">01/05/2024</td>
+        <td class="table_data" scope="row">Trailed out</td>
+        <td class="table_data" scope="row">$11.25</td>
+        <td class="table_data" scope="row">$39.00</td>
+        <td class="table_data" scope="row">Out too early</td>
+      </tr>
+
+      <tr class="table_row">
+        <th class="table_data" scope="row">4</th>
+        <td class="table_data" scope="row">12/06/2023</td>
+        <td class="table_data" scope="row">ANF</td>
+        <td class="table_data" scope="row">Daily</td>
+        <td class="table_data" scope="row">Breakout</td>
+        <td class="table_data" scope="row">Long</td>
+        <td class="table_data" scope="row">10</td>
+        <td class="table_data" scope="row">$78.92</td>
+        <td class="table_data" scope="row">$74.60</td>
+        <td class="table_data" scope="row">$91.71</td>
+        <td class="table_data" scope="row">$50.00</td>
+        <td class="table_data" scope="row">12/13/2023</td>
+        <td class="table_data" scope="row">Trailed out</td>
+        <td class="table_data" scope="row">$82.95</td>
+        <td class="table_data" scope="row">$40.30</td>
+        <td class="table_data" scope="row">Out too early</td>
+      </tr>
+      
+      <tr class="table_row">
+        <th class="table_data" scope="row">3</th>
+        <td class="table_data" scope="row">10/31/2023</td>
+        <td class="table_data" scope="row">ALL</td>
+        <td class="table_data" scope="row">Daily</td>
+        <td class="table_data" scope="row">Breakout</td>
+        <td class="table_data" scope="row">Long</td>
+        <td class="table_data" scope="row">10</td>
+        <td class="table_data" scope="row">$127.12</td>
+        <td class="table_data" scope="row">$124.32</td>
+        <td class="table_data" scope="row">$135.51</td>
+        <td class="table_data" scope="row">$28.00</td>
+        <td class="table_data" scope="row">11/02/2023</td>
+        <td class="table_data" scope="row">Target hit</td>
+        <td class="table_data" scope="row">$135.54</td>
+        <td class="table_data" scope="row">$84.20</td>
+        <td class="table_data" scope="row">Should have used profit maximizer</td>
+      </tr>
+
+      <tr class="table_row">
+        <th class="table_data" scope="row">2</th>
+        <td class="table_data" scope="row">10/06/2023</td>
+        <td class="table_data" scope="row">X</td>
+        <td class="table_data" scope="row">Daily</td>
+        <td class="table_data" scope="row">Pullback</td>
+        <td class="table_data" scope="row">Long</td>
+        <td class="table_data" scope="row">20</td>
+        <td class="table_data" scope="row">$33.08</td>
+        <td class="table_data" scope="row">$32.13</td>
+        <td class="table_data" scope="row">$35.93</td>
+        <td class="table_data" scope="row">$25.00</td>
+        <td class="table_data" scope="row">10/16/2023</td>
+        <td class="table_data" scope="row">Stopped Out</td>
+        <td class="table_data" scope="row">$33.07</td>
+        <td class="table_data" scope="row">(-) $0.20</td>
+        <td class="table_data" scope="row">Break even</td>
+      </tr>
+
+      <tr class="table_row">
+        <th class="table_data" scope="row">1</th>
+        <td class="table_data" scope="row">10/03/2023</td>
+        <td class="table_data" scope="row">QQQ</td>
+        <td class="table_data" scope="row">Daily</td>
+        <td class="table_data" scope="row">Breakout</td>
+        <td class="table_data" scope="row">Long</td>
+        <td class="table_data" scope="row">20</td>
+        <td class="table_data" scope="row">$354.20</td>
+        <td class="table_data" scope="row">$353.70</td>
+        <td class="table_data" scope="row">$355.70</td>
+        <td class="table_data" scope="row">$10.00</td>
+        <td class="table_data" scope="row">10/03/2023</td>
+        <td class="table_data" scope="row">Stopped Out</td>
+        <td class="table_data" scope="row">$353.70</td>
+        <td class="table_data" scope="row">(-) $10.00</td>
+        <td class="table_data" scope="row">Stop loss hit</td>
+      </tr>
+
+    </table>
+  </main>
+  <!-- End of Spreadsheet -->
+
+  <!-- Footer -->
+  <footer class="center">
+    <p>Copyright Trade Journal - 2024</p>
+  </footer>
+  <!-- End Footer -->
+
+  
+  <!-- Bootstrap -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+    

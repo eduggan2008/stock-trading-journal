@@ -1,0 +1,139 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Open Sans', cursive;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.navbar-link {
+  text-align: center;
+  font-size: 2rem;
+  display: inline-block;
+  margin: 1.7rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .trades-form {
+  border: solid 3px;
+  padding: 1em;
+  max-width: 75%;
+} */
+
+/* .form-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8em;
+} */
+
+.wrapper {
+  width: 100%;
+  perspective: 50rem;
+}
+
+.landing-page {
+  flex-direction: column;
+  background: url(images/trading-platform.jpg) center no-repeat;
+  background-size: cover;
+  opacity: .6;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background-color: #efefef;
+  position: relative;
+  box-shadow: 0.5rem 0.5rem 1rem #aaa;
+}
+
+.section-heading {
+  font-family: 'Special Elite', cursive;
+  font-size: 8rem;
+  font-weight: bolder;
+  color: #fff;
+  margin-bottom: 5rem;
+  letter-spacing: 1rem;
+  text-align: center;
+  text-shadow: 0.3rem 0.3rem 0.5rem #555;
+}
+
+.heading {
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  text-shadow: 1rem 1rem 1rem #000, 2rem 2rem 2rem #111, 3rem 3rem 3rem #222;
+}
+
+.common-pages {
+  flex-direction: column;
+}
+
+.chart-image {
+  height: 50vh;
+  width: 50vw;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.common-subheading {
+  margin-top: 5rem;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: rgb(255, 32, 32);
+  font-weight: bold;
+  text-shadow: 0.2rem 0.2rem 0.3rem #555;
+}
+
+fieldset {
+  margin: 4rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+legend {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: rgb(255, 32, 32);
+  font-weight: bold;
+}
+
+.data {
+  font-size: 1.8rem;
+}
+
+.submit-trade-button {
+  background-color: green;
+  color: #fff;
+  text-align: center;
+  margin: 1rem;
+  padding: 1.5rem;
+  font-size: 3rem;
+  border-radius: 10px;
+  
+}
+
+
+
+footer p {
+  margin: 2rem;
+  padding: 2rem;
+  font-size: 1.7rem;
+}
