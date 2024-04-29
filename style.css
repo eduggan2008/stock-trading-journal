@@ -130,12 +130,21 @@ legend {
 }
 
 table {
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   border-spacing: 0;
   border: 5px solid #000;
-  font-size: 1.5rem;
-  margin: 5rem;
+  font-size: 1.7rem;
+  margin: 5rem 0;
   background-color: #c9c7c7;
+  overflow: auto;
+  width: 90%;
+  max-width: 1200px;
+  height: 75vh;
+  display: block;
+}
+
+tbody {
+  white-space: no-wrap;
 }
 
 th, td {
@@ -144,7 +153,9 @@ th, td {
 }
 
 th {
-  vertical-align: bottom;
+  position: sticky;
+  top: 0;
+  background-color: rgb(164, 224, 252);
 }
 
 thead > tr {
