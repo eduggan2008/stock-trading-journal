@@ -25,12 +25,26 @@ header {
 }
 
 .navbar-link {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 600;
   display: inline-block;
-  margin: 1.7rem;
-  color: #102C57;
+  background-color: #102C57;
+  background-image: url(images/background.png);
+  text-shadow: .3rem .3rem .3rem #000, .6rem .6rem .6rem #111, 1rem 1rem 1rem #222;
+  text-transform: uppercase;
+  color: #FEFAF6;
+  text-align: center;
+  margin: 1rem 2.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border: 1px solid #FEFAF6;
+  border-radius: 15%;
+  opacity: 0.8;
+	transform: scale(1);
+}
+
+.navbar-link:hover {
+  opacity: 1;
+	transform: scale(1.15);
 }
 
 .center {
@@ -90,9 +104,9 @@ section {
   margin-top: 5rem;
   text-transform: uppercase;
   font-size: 4rem;
-  color: rgb(255, 32, 32);
+  color: #FEFAF6;
   font-weight: bold;
-  text-shadow: 0.2rem 0.2rem 0.3rem #555;
+  text-shadow: 1rem 1rem 1rem #000, 2rem 2rem 2rem #111, 3rem 3rem 3rem #222;
 }
 
 .trades-form {
@@ -133,6 +147,12 @@ legend {
   font-size: 3rem;
   font-weight: 600;
   border-radius: 10px;
+  opacity: 0.8;
+	transform: scale(1);
+}
+.submit-trade-button:hover {
+  opacity: 1;
+	transform: scale(1.15);
 }
 
 table {
