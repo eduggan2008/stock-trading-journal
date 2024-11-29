@@ -69,6 +69,24 @@ header {
   opacity: .6;
 }
 
+.common-pages {
+  flex-direction: column;
+  background: url(images/5-minute-charts.jpg) center/cover;
+  width: 70vw;
+  height: 70vh;
+  margin: 5rem auto;
+  opacity: .6;
+}
+
+.trades-page {
+  flex-direction: column;
+  background: url(images/5-minute-charts.jpg) center/cover;
+  width: 70vw;
+  height: 70vh;
+  margin: 5rem auto;
+  opacity: .6;
+}
+
 section {
   width: 100%;
   height: 100vh;
@@ -160,6 +178,16 @@ legend {
   opacity: 1;
 	transform: scale(1.25);
   cursor: pointer;
+}
+
+.trade-details {
+  margin: 2rem 0;
+  font-size: 4rem;
+}
+
+li {
+  font-size: 2rem;
+  color: #FEFAF6;
 }
 
 table {

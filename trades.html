@@ -34,9 +34,8 @@
   
   <!-- Trades Page Heading -->
   <div class="wrapper">
-    <section class="common-pages center">
+    <section class="common-pages trades-page center">
       <h1 class="heading section-heading">Stock Trading Journal</h1>
-      <img src="/images/5-minute-charts.jpg" alt="5 minute charts" class="chart-image">
       <h2 class="common-subheading">Trades</h2>
     </section>
   </div>
@@ -47,7 +46,26 @@
       <h2 class="common-subheading">Record Trades Here</h2>
     </div>
 
-    <form class="trades-form" action="#" method="">
+    <form class="trades-form" name="tradesForm" id="tradesForm">
+      <input type="text" name="symbol" id="symbol" placeholder="Symbol">
+      <input type="text" name="timeframe" id="timeframe" placeholder="Timeframe">
+      <input type="text" name="direction" id="direction" placeholder="Direction">
+      <input type="number" name="shares" id="shares" placeholder="Number of Shares">
+      <input type="number" name="entryPrice" id="entryPrice" placeholder="Entry Price">
+      <input type="number" name="stopPrice" id="stopPrice" placeholder="Stop Price">
+      <input type="number" name="exitPrice" id="exitPrice" placeholder="Exit Price">
+      <input type="number" name="profitLoss" id="profitLoss" placeholder="Profit or Loss Total">
+      <button type="submit">Submit Trade</button>
+    </form>
+
+
+    <h2 class="trade-details">Your trade details</h2>
+    <ul id="trades">
+
+    </ul>
+
+
+    <!-- <form class="trades-form" id="trades-form" action="" method="">
       <fieldset>
         <legend>Entry Date</legend>
         <div class="form-floating mb-3 align-self-center">  
@@ -207,7 +225,8 @@
         <button class="submit-trade-button" type="submit">Submit</button>
       </div>
 
-    </form>
+    </form> -->
+
   </main>
   
 
